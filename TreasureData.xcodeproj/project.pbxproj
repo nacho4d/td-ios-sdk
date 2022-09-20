@@ -10,9 +10,18 @@
 		1950CB9871EC3D104BCD112A /* TDIAPObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 1950CA957CA6115F3C3DD018 /* TDIAPObserver.m */; };
 		1F68EE6328E24A445D660A51 /* libPods-TreasureDataTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0DB92B1F49BBC30A854EB53 /* libPods-TreasureDataTests.a */; };
 		2053A39C2047F37F0089A959 /* TDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2053A39B2047F37F0089A959 /* TDUtils.m */; };
+		4F68A58728DA236700C14B7A /* TDRequestOptionsKey.h in Headers */ = {isa = PBXBuildFile; fileRef = DF259EBC22A5034A00697319 /* TDRequestOptionsKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F68A58828DA236700C14B7A /* TreasureData.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B738096192A09160097D56E /* TreasureData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F68A58928DA236700C14B7A /* TDClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BF8C9321A3E9B76005B1804 /* TDClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F68A58A28DA238200C14B7A /* Deflate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B351A74194ABF0F001CBAAD /* Deflate.h */; };
+		4F68A58B28DA238200C14B7A /* NSString+Helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = DF259EBD22A5138800697319 /* NSString+Helpers.h */; };
+		4F68A58C28DA238200C14B7A /* TDClientInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = E5701BA5225755C5000FB17F /* TDClientInternal.h */; };
+		4F68A58D28DA238200C14B7A /* TDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 2053A39D2047F38B0089A959 /* TDUtils.h */; };
+		4F68A58E28DA238200C14B7A /* Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = 201053E9204858F8009C7EFA /* Constants.h */; };
+		4F68A58F28DA238200C14B7A /* Session.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BB5A9D21D1A86CD0006A534 /* Session.h */; };
+		4F68A59028DA238200C14B7A /* TDIAPObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 1950C4C633D1BEA93C441EFC /* TDIAPObserver.h */; };
 		6B351A76194ABF0F001CBAAD /* Deflate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B351A75194ABF0F001CBAAD /* Deflate.m */; };
 		6B738092192A09160097D56E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B738091192A09160097D56E /* Foundation.framework */; };
-		6B738097192A09160097D56E /* TreasureData.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6B738096192A09160097D56E /* TreasureData.h */; };
 		6B738099192A09160097D56E /* TreasureData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B738098192A09160097D56E /* TreasureData.m */; };
 		6B7380A0192A09160097D56E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B73809F192A09160097D56E /* XCTest.framework */; };
 		6B7380A1192A09160097D56E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B738091192A09160097D56E /* Foundation.framework */; };
@@ -20,14 +29,12 @@
 		6B7380A6192A09160097D56E /* libTreasureData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B73808E192A09160097D56E /* libTreasureData.a */; };
 		6B7380AC192A09160097D56E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B7380AA192A09160097D56E /* InfoPlist.strings */; };
 		6B7380AE192A09160097D56E /* TreasureDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7380AD192A09160097D56E /* TreasureDataTests.m */; };
-		6B758E4E1C00C59A00D597F8 /* TDClient.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6BF8C9321A3E9B76005B1804 /* TDClient.h */; };
 		6BB5A9D41D1A86EF0006A534 /* Session.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB5A9D31D1A86EE0006A534 /* Session.m */; };
 		6BB5A9D61D1BBFE60006A534 /* SessionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB5A9D51D1BBFE60006A534 /* SessionTests.m */; };
 		6BF8C92D1A3E971D005B1804 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BF8C92C1A3E971D005B1804 /* CoreLocation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		6BF8C92F1A3E972C005B1804 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BF8C92E1A3E972C005B1804 /* Security.framework */; };
 		6BF8C9311A3E977B005B1804 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BF8C9301A3E977B005B1804 /* libz.dylib */; };
 		6BF8C9341A3E9B76005B1804 /* TDClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF8C9331A3E9B76005B1804 /* TDClient.m */; };
-		DF1DA0DA251DE468006EE00F /* TDRequestOptionsKey.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DF259EBC22A5034A00697319 /* TDRequestOptionsKey.h */; };
 		DF9D4DC6230FBC4200682E41 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9D4DC5230FBC4200682E41 /* AdSupport.framework */; };
 		E52CB7F521FDD78A00062EBA /* TDAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CB7F421FDD78A00062EBA /* TDAPI.swift */; };
 		E5A84B5421FEA35300BC699D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A84B5321FEA35300BC699D /* AppDelegate.swift */; };
@@ -55,21 +62,6 @@
 			remoteInfo = TestHost;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		6B73808C192A09160097D56E /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-				DF1DA0DA251DE468006EE00F /* TDRequestOptionsKey.h in CopyFiles */,
-				6B738097192A09160097D56E /* TreasureData.h in CopyFiles */,
-				6B758E4E1C00C59A00D597F8 /* TDClient.h in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		11FADA7F69E6E148978C0F7C /* libPods-TreasureData.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TreasureData.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -310,15 +302,35 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		4F68A58628DA233F00C14B7A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F68A58728DA236700C14B7A /* TDRequestOptionsKey.h in Headers */,
+				4F68A58828DA236700C14B7A /* TreasureData.h in Headers */,
+				4F68A58928DA236700C14B7A /* TDClient.h in Headers */,
+				4F68A58A28DA238200C14B7A /* Deflate.h in Headers */,
+				4F68A58B28DA238200C14B7A /* NSString+Helpers.h in Headers */,
+				4F68A58C28DA238200C14B7A /* TDClientInternal.h in Headers */,
+				4F68A58D28DA238200C14B7A /* TDUtils.h in Headers */,
+				4F68A58E28DA238200C14B7A /* Constants.h in Headers */,
+				4F68A58F28DA238200C14B7A /* Session.h in Headers */,
+				4F68A59028DA238200C14B7A /* TDIAPObserver.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		6B73808D192A09160097D56E /* TreasureData */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B7380B1192A09160097D56E /* Build configuration list for PBXNativeTarget "TreasureData" */;
 			buildPhases = (
 				60BA478A76FC90AEF22FE6A4 /* [CP] Check Pods Manifest.lock */,
+				4F68A58628DA233F00C14B7A /* Headers */,
 				6B73808A192A09160097D56E /* Sources */,
 				6B73808B192A09160097D56E /* Frameworks */,
-				6B73808C192A09160097D56E /* CopyFiles */,
 			);
 			buildRules = (
 			);
